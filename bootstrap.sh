@@ -1,20 +1,18 @@
 #!/usr/bin/env bash
 
-# go to scripts directory and then save working directory
-dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-olddir=~/.dotfiles_old
+# save working directory
+dir=$(pwd)
+DATE=$(date +%Y%m%d%H%M%S)
+olddir=~/.dotfiles_old/$DATE
 # list of files/folders to symlink in homedir
 files=".aliases.d .bash_aliases .gitconfig .gitconfig.d .vimrc .vim"
 
 ##########
 
-echo "Creating backup directory for any existing dotfiles in ~"
 mkdir -vp $olddir
-echo "...done"
 
 echo "Changing to the $dir directory"
 cd $dir
-echo "...done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
 echo "Moving any existing dotfiles from ~ to $olddir and creating symlinks in home directory."
@@ -26,6 +24,6 @@ done
 echo "...done"
 
 SHELL_RC_FILE=~/.bashrc
-if ! source $SHELL_RC_FILE; then
+if ! source $SHELL_RC_FILE 2>/dev/null; then
 	. $SHELL_RC_FILE
 fi
