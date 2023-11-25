@@ -1,4 +1,5 @@
 
 .aliases.d/work
 .gitconfig.d/email.gitconfig
+.gitconfig.d/work.gitconfig
 .vim/.netrwhist

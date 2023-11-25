@@ -1,0 +1,28 @@
+[user]
+        name = Erik From
+        user = Erik From
+
+[branch]
+	autoSetupRebase = always
+
+[core]
+	autocrlf = false
+	autolf = true
+
+[push]
+	default = current
+	followTags = true
+
+[merge]
+	tool = intellij
+#	tool = vimdiff
+
+[diff]
+	tool = intellij
+#	tool = vimdiff
+
+[include]
+	path = ~/.gitconfig.d/alias.gitconfig
+	path = ~/.gitconfig.d/email.gitconfig
+	path = ~/.gitconfig.d/tools.gitconfig
+	path = ~/.gitconfig.d/work.gitconfig
