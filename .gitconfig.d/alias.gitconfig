@@ -1,0 +1,11 @@
+
+[alias] 
+        br = branch
+        cl = clone
+        co = checkout
+        cm = commit
+        l = log --oneline -n 20 --graph
+        last = log -1 HEAD
+        mu = merge upstream/master
+        pl = pull --rebase
+        st = status

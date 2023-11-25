@@ -1,0 +1,8 @@
+
+[mergetool "intellij"]
+        cmd = IDEA_PROPERTIES=~/.IdeaICGit/idea.properties /opt/intellij-idea-community/bin/idea.sh merge $LOCAL $REMOTE $BASE $MERGED
+        trustExitCode = true
+[difftool "intellij"]
+        cmd = /opt/intellij-idea-community/bin/idea.sh diff $LOCAL $REMOTE
+[difftool "vimdiff"]
+        cmd = vimdiff "$LOCAL" "$REMOTE" -c \"se ro\" -c \"wincmd l\"

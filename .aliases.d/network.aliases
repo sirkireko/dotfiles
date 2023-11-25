@@ -1,0 +1,2 @@
+
+# already exists alias ip="echo Your ip is; dig +short myip.opendns.com @resolver1.opendns.com;"
