@@ -1,0 +1,7 @@
+
+alias aga='sudo apt-get autoremove'
+alias agg='sudo apt-get upgrade'
+alias agi='sudo apt-get install'
+alias agr='sudo apt-get remove'
+alias agu='sudo apt-get update'
+

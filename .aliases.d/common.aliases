@@ -1,0 +1,17 @@
+
+alias lock='gnome-screensaver-command --lock'
+
+alias mounted='mount | column -t'
+
+alias restart='shutdown -r'
+alias shd0='shutdown 0'
+
+
+b64(){
+echo -n "$1" | base64
+}
+
+b64d(){
+echo -n "$1" | base64 -d
+echo
+}

@@ -1,2 +1,12 @@
 
-# already exists mcd () { mkdir -p "$1" && cd "$1"; }
+alias ..='cd ..'
+
+alias la='ls -A'
+alias ld='ls -lah'
+alias ll='ls -alF'
+
+#change dir and print whats in the directory
+cl(){
+cd "$*"
+ls
+}

@@ -1,0 +1,14 @@
+
+alias g='git'
+alias ga='git add'  
+alias gb='git checkout -b'
+alias gc='git commit -m "$*"'
+alias gh='git checkout'
+alias gp="git stash; git pull --rebase $*; git stash pop"
+alias gu='git push' 
+alias gsu='git status --show-stash'
+alias gsh='git stash push'
+alias gsp='git stash pop'
+alias gsl='git stash list'
+alias gt='git log --branches --decorate --graph --oneline --all'
+
