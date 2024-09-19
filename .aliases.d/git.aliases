@@ -2,7 +2,7 @@
 alias g='git'
 alias ga='git add'  
 alias gb='git checkout -b'
-alias gc='git commit -m "$*"'
+alias gc='git commit -m '"$*"
 alias gh='git checkout'
 alias gp="git stash; git pull --rebase $*; git stash pop"
 alias gu='git push' 

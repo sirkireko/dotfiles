@@ -8,18 +8,22 @@
 [core]
 	autocrlf = false
 	autolf = true
+	editor = vim
+
+[pull]
+	rebase = true
 
 [push]
 	default = current
 	followTags = true
 
 [merge]
-	tool = intellij
-#	tool = vimdiff
+#	tool = intellij
+	tool = vimdiff
 
 [diff]
-	tool = intellij
-#	tool = vimdiff
+#	tool = intellij
+	tool = vimdiff
 
 [include]
 	path = ~/.gitconfig.d/alias.gitconfig
